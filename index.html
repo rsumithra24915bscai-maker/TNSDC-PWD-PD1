@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset & base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ff4444;
+    }
+
+    header {
+      background: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #00ffcc;
+    }
+
+    header h1 {
+      color: #00ffcc;
+    }
+
+    header p {
+      color: #ccc;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      color: #00ffcc;
+      margin-bottom: 20px;
+      border-left: 5px solid #ff4444;
+      padding-left: 10px;
+    }
+
+    /* About Section */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .about img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 100px;
+      margin-right: 30px;
+      border: 4px solid #007bff;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    /* Skills */
+    .skills {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .skill {
+      background: #007bff;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    /* Projects */
+    .project {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      border-left: 4px solid #00ffcc;
+    }
+
+    .project img {
+      max-width: 100%;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 3px solid #00ffcc;
+      margin-bottom: 15px;
+      transition: border-color 0.3s ease;
+    }
+
+    .project img:hover {
+      border-color: #ff4444;
+    }
+
+    /* Contact */
+    .contact p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #1e1e1e;
+      text-align: center;
+      padding: 20px;
+      color: #999;
+      border-top: 2px solid #00ffcc;
+    }
+
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about img {
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
+
+      .skills {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Sumithra R</h1>
+    <p>Web Developer</p>
+  </header>
+
+  <div class="container">
+    <!-- About Me -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about">
+        <img src="profile.png" alt="Praveen Kumar R" />
+        <div class="about-text">
+          <p>
+            Hello! I’m Sumithra, a passionate web developer currently pursuing my BSc in Computer Science (II Year). I enjoy building interactive, user-friendly websites using HTML, CSS, and JavaScript. I'm always learning and eager to take on new challenges!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Car Booking</h3>
+        <a href="project.html" target="_blank" rel="noopener">
+          <img src="sample.png" alt="Car Booking Project" />
+        </a>
+        <p>
+          A simple and responsive car booking website where users can view available cars, book rides, and get confirmation. Built using HTML, CSS, and JavaScript for smooth user experience.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>BSc Computer Science</strong> — II Year</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact">
+        <p>Email: <a href="mailto:rsumithra24915bsai@gmail.com">rsumithra24915bsai@gmail.com</a></p>
+        <p>Phone: 7358599079</p>
+        <p>Location: Thiruvallur</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sumithra. All rights reserved.</p>
+  </footer>
+</body>
+</html>
